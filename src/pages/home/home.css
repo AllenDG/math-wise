@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  
+}
+
+.Container{
+  background-color: #ffffff;
+  
+}
+
+.Container-header{
+  margin-bottom: 15vh;
+}
+
+.Header p, .tagDesc{
+  text-align: left;
+  padding-left: 30vh;
+  
+}
+
+.Header p{
+  margin-top: 30vh;
+  margin-bottom: 2vh;
+  font-size: 15px;
+}
+
+.tagDesc{
+  font-size: 35px;
+  margin-bottom: 5vh;
+}
+
+.Buttons{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  height: 100px;
+  padding-left: 30vh;
+}
+
+
+@media only screen and (max-width: 768px){
+	
+  .Header p, .tagDesc, .Buttons{
+    padding-left: 10vh;
+  }
+  .Header p{
+    margin-top: 20vh;
+  }
+}
+
+@media only screen and (max-width: 450px){
+	.Header p, .tagDesc, .Buttons{
+    padding-left: 8vh;
+  }
+
+  .Header p{
+    font-size: 10px;
+  }
+
+  .tagDesc{
+    font-size: 20px;
+  }
+
+  .Buttons{
+    font-size: 10px;
+   height: 50px;
+  }
+}

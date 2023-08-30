@@ -12,7 +12,8 @@ import {
 	FaInfoCircle
 } from 'react-icons/fa';
 import { NavLink } from "react-router-dom";
-import "../style/navbar.css";
+import "../navbar/navbar.css";
+
 
 const ICON_SIZE = 20;
 

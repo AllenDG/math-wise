@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
 import "./style/index.css";
 
-import Home from './pages/Home'
+import Home from './pages/home/Home'
 import Exploration from './pages/Exploration'
 import Lesson from './pages/Lesson'
 import About from './pages/About'
