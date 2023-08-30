@@ -1,3 +1,13 @@
 .card_container{
   padding-left: 32vh;
 }
+
+@media only screen and (max-width: 768px){
+
+  
+	.card_container{
+    padding-left: 1vh;
+    
+  }
+  
+}

@@ -42,14 +42,19 @@
 }
 
 
+
 @media only screen and (max-width: 768px){
-	
+
+	/* Tagline Responsive */
   .Header p, .tagDesc, .Buttons{
     padding-left: 10vh;
   }
   .Header p{
     margin-top: 20vh;
   }
+
+  /* Content Responsive */
+  
 }
 
 @media only screen and (max-width: 450px){

@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
 import "./style/index.css";
 
 import Home from './pages/home/Home'
-import Exploration from './pages/Exploration'
+import Exploration from './pages/exploration/Exploration'
 import Lesson from './pages/Lesson'
 import About from './pages/About'
 

@@ -9,10 +9,10 @@ import { Box, Card, CardContent, CardActions,Button, Typography } from "@mui/mat
 const MuiCard = () => {
   return (
     <Grid className='card_container' container rowSpacing={1} columnSpacing={{ xs: 6, sm: 2, md: 3 }}>
-  <Grid item xs={6} md={3}>
+  <Grid className='item' item xs={6} md={3}>
    
-  <Card sx={{ minWidth: 300 }}>
-      <CardContent>
+  <Card  sx={{ minWidth: 300 }}>
+      <CardContent className='content'>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Word of the Day
         </Typography>
@@ -28,16 +28,16 @@ const MuiCard = () => {
           {'"a benevolent smile"'}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions className='content'>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
   </Grid>
   
-  <Grid item xs={6} md={3}>
+  <Grid className='item' item xs={6} md={3}>
    
   <Card sx={{ minWidth: 300 }}>
-      <CardContent>
+      <CardContent className='content'>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Word of the Day
         </Typography>
@@ -59,10 +59,10 @@ const MuiCard = () => {
     </Card>
   </Grid>
 
-  <Grid item xs={6} md={3}>
+  <Grid className='item' item xs={6} md={3}>
    
   <Card sx={{ minWidth: 300 }}>
-      <CardContent>
+      <CardContent className='content'>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Word of the Day
         </Typography>
