@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
 import "./style/index.css";
 
 import Home from './pages/Home'
+import Exploration from './pages/Exploration'
+import Lesson from './pages/Lesson'
+import About from './pages/About'
 
 function App() {
 	const [navVisible, showNavbar] = useState(false);
@@ -13,24 +16,10 @@ function App() {
 			<div className="App">
 				<Navbar visible={ navVisible } show={ showNavbar } />
 				<Routes>
-					<Route path="/" element={<Navigate to="/home" />} />
 					<Route path='/home' element={ <Home/>} />
-					
-					<Route path='/analytics' element={
-						<div className={!navVisible ? "page" : "page page-with-navbar"}>
-							<h1>Analystics</h1>
-						</div>
-					}/>
-					<Route path='/orders' element={
-						<div className={!navVisible ? "page" : "page page-with-navbar"}>
-							<h1>Orders</h1>
-						</div>
-					}/>
-					<Route path='/settings' element={
-						<div className={!navVisible ? "page" : "page page-with-navbar"}>
-							<h1>Settings</h1>
-						</div>
-					}/>
+					<Route path='/exploration' element={ <Exploration/>} />
+					<Route path='/lesson' element={ <Lesson/>} />
+					<Route path='/about' element={ <About/>} />
 				</Routes>
 			</div>
 		</BrowserRouter>
