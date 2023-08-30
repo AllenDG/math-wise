@@ -1,46 +1,90 @@
 import React from 'react'
 import "../../style/card.css"
 
-import { Box, Card, CardContent, Typography } from "@mui/material"
+import Grid from '@mui/material/Grid';
+
+import { Box, Card, CardContent, CardActions,Button, Typography } from "@mui/material"
 
 
 const MuiCard = () => {
   return (
-    <Box width={"300px"}>
-      <Card className='card'>
-        <CardContent>
-          <Typography gutterBottom variant='h5' component={"div"} >Test</Typography>
-          <Typography variant='body2' color="black">
-            React is a JavaScript library for building user interface. React can be
-            used as a base in the development of single-page or mobile applications.
-          </Typography>
-        </CardContent>
-      </Card>
+    <Grid className='card_container' container rowSpacing={1} columnSpacing={{ xs: 6, sm: 2, md: 3 }}>
+  <Grid item xs={6} md={3}>
+   
+  <Card sx={{ minWidth: 300 }}>
+      <CardContent>
+        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          Word of the Day
+        </Typography>
+        <Typography variant="h5" component="div">
+         
+        </Typography>
+        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          adjective
+        </Typography>
+        <Typography variant="body2">
+          well meaning and kindly.
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </Grid>
+  
+  <Grid item xs={6} md={3}>
+   
+  <Card sx={{ minWidth: 300 }}>
+      <CardContent>
+        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          Word of the Day
+        </Typography>
+        <Typography variant="h5" component="div">
+         
+        </Typography>
+        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          adjective
+        </Typography>
+        <Typography variant="body2">
+          well meaning and kindly.
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </Grid>
 
-      <Card className='card'>
-        <CardContent>
-          <Typography gutterBottom variant='h5' component={"div"} >Test</Typography>
-          <Typography variant='body2' color="black">
-            React is a JavaScript library for building user interface. React can be
-            used as a base in the development of single-page or mobile applications.
-          </Typography>
-        </CardContent>
-      </Card>
-
-      <Card className='card'>
-        <CardContent>
-          <Typography gutterBottom variant='h5' component={"div"} >Test</Typography>
-          <Typography variant='body2' color="black">
-            React is a JavaScript library for building user interface. React can be
-            used as a base in the development of single-page or mobile applications.
-          </Typography>
-        </CardContent>
-      </Card>
-
-
-
-
-    </Box>
+  <Grid item xs={6} md={3}>
+   
+  <Card sx={{ minWidth: 300 }}>
+      <CardContent>
+        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          Word of the Day
+        </Typography>
+        <Typography variant="h5" component="div">
+         
+        </Typography>
+        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          adjective
+        </Typography>
+        <Typography variant="body2">
+          well meaning and kindly.
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </Grid>
+  
+</Grid>
 
     
   )

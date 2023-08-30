@@ -37,6 +37,10 @@
   padding-left: 30vh;
 }
 
+.card{
+  align-self: center;
+}
+
 
 @media only screen and (max-width: 768px){
 	

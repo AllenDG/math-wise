@@ -1,9 +1,11 @@
 import React from 'react'
 import MuiCard from '../../components/reusable/MuiCard'
 
+
 const Content_home = () => {
   return (
     <MuiCard/>
+    
   )
 }
 
