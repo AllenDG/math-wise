@@ -1,28 +1,77 @@
-import React, {useState} from 'react';
-import Navbar from "./components/navbar/Navbar";
-import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
-import "./style/index.css";
+import React, { useState } from 'react';
+import Navbar from './components/navbar/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './style/index.css';
 
 import Home from './pages/home/Home'
-import Exploration from './pages/exploration/Exploration'
-import Lesson from './pages/Lesson'
-import About from './pages/About'
+import Exploration from './pages/exploration/Exploration';
+import Lesson from './pages/lesson/Lesson';
+import About from './pages/about/About';
+import Settings from './pages/settings/Settings';
+import Login from './pages/login/Login';
 
 function App() {
-	const [navVisible, showNavbar] = useState(false);
+  const [navVisible, showNavbar] = useState(false);
 
-	return (
-		<BrowserRouter >
-			<div className="App">
-				<Navbar visible={ navVisible } show={ showNavbar } />
-				<Routes>
-					<Route path='/home' element={ <Home/>} />
-					<Route path='/exploration' element={ <Exploration/>} />
-					<Route path='/lesson' element={ <Lesson/>} />
-					<Route path='/about' element={ <About/>} />
-				</Routes>
-			</div>
-		</BrowserRouter>
+  return (
+    <BrowserRouter>
+      <div className="App">
+       
+       
+
+        <Routes>
+         
+          <Route
+            path="/home"
+            element={
+              <>
+                <Navbar visible={navVisible} show={showNavbar} />
+                <Home />
+              </>
+            }
+          />
+          <Route
+            path="/lesson"
+            element={
+              <>
+                <Navbar visible={navVisible} show={showNavbar} />
+                <Lesson />
+              </>
+            }
+          />
+          <Route
+            path="/exploration"
+            element={
+              <>
+                <Navbar visible={navVisible} show={showNavbar} />
+                <Exploration />
+              </>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <>
+                <Navbar visible={navVisible} show={showNavbar} />
+                <About />
+              </>
+            }
+          />
+          <Route
+            path="/settings"
+            element={
+              <>
+                <Navbar visible={navVisible} show={showNavbar} />
+                <Settings />
+              </>
+            }
+          />
+
+       
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
