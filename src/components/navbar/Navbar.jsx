@@ -2,8 +2,7 @@ import React from 'react';
 import {
 	FaAngleRight,
 	FaAngleLeft, 
-	FaChartBar, 
-	FaShoppingCart, 
+	FaChartBar,
 	FaCog,
 	FaSignOutAlt,
 	FaBars,

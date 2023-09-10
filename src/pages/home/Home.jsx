@@ -1,10 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import "../home/home.css"
-import Button from '../../components/reusable/Button'
-import Content_home from './Content_home'
-
-
+import "../home/home.css";
+import Button from '../../components/reusable/Button';
+import Content_home from './Content_home';
 
 const Home = () => {
   return (

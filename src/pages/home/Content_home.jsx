@@ -9,4 +9,4 @@ const Content_home = () => {
   )
 }
 
-export default Content_home
+export default Content_home;
