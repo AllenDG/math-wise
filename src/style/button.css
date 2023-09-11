@@ -1,12 +1,20 @@
-.Buttons button{
-  all:unset;
-  background-color: rgb(241, 241, 241);
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin-right: 20px;
-  }
+/* style/button.css */
+.Buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
 
-  .Buttons button:focus{
-    outline: 1px solid rgb(36, 8, 158);
-    cursor: pointer;
-  }
+/* Style for Learn More button */
+.MuiButton-containedPrimary {
+  background-color: #0074b8; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+}
+
+/* Style for Download App button */
+.MuiButton-containedPrimary.secondary {
+  background-color: #ff5722; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+}
+
+/* Add more CSS rules as needed to further customize the buttons */

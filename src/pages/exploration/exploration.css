@@ -1,40 +1,25 @@
-*{
-  margin: 0;
+.explore-content {
+  padding: 20px;
 }
 
-.description1{
-  margin-left: 40vh;
-  margin-top: 10vh;
-  font-weight: 100;
-  letter-spacing: 4px;
+.description1 {
+  background-color: #0074b8; /* Add your desired background color */
+  color: #fff; /* Add your desired text color */
+  padding: 20px;
+  border-radius: 5px;
 }
 
-.explore_container{
-  margin-top: 11vh;
-  padding-top: 40px;
-  height: 55vh;
-  width: 45vh;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
-  background-color: rgba(2, 2, 2, 0.438);
+.explore-container {
+  background-color: #f0f0f0; /* Add your desired background color */
+  padding: 20px;
+  border: 1px solid #ccc; /* Add a border or adjust as needed */
+  border-radius: 5px;
 }
 
-.explore_container h6{
-  font-weight: 100;
-  margin-top: 30px;
-  font-size: 18px;
- 
+.explore-container h6 {
+  margin-bottom: 10px;
 }
 
-.video {
-  position: absolute;
-  z-index: -1;
-  height: 80vh;
-  width: 100%;
-  margin-top: 60vh;
-  top: 0;
-  left: 0;
-
+.explore-container li {
+  margin-bottom: 8px;
 }

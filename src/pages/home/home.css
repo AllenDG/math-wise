@@ -41,7 +41,42 @@
   align-self: center;
 }
 
+.content {
+  padding: 40px 0;
+  text-align: center;
+}
 
+.content-header {
+  padding-top: 10vh;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.feature {
+  background-color: #fff; /* Change background color as needed */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20vh;
+  margin-left: 10px; /* Add left margin */
+  margin-right: 10px; /* Add right margin */
+}
+.feature h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333; /* Change text color as needed */
+}
+
+.feature p {
+  font-size: 16px;
+  color: #555; /* Change text color as needed */
+}
+
+.learn-more-text {
+   padding-top:0;
+  padding-bottom: 30px;
+  padding-left: 30px; /* Change text color as needed */
+}
 
 @media only screen and (max-width: 768px){
 

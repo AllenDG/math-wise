@@ -1,17 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Button } from '@mui/material';
 import "../../style/button.css"
 
-
-const Button = () => {
+const MyButtons = () => {
   return (
     <div className='Buttons'>
-      
-      <button className="learn-btn" onClick={"#"}>Learn More</button>
-      <button className="learn-btn" onClick={"#"}>Download App</button>
-     
-     
-      </div>
-  )
+      <Button variant="contained" color="primary" onClick={() => {}}>
+        Learn More
+      </Button>
+      <Button variant="contained" color="primary" onClick={() => {}}>
+        Download App
+      </Button>
+    </div>
+  );
 }
 
-export default Button;
+export default MyButtons;

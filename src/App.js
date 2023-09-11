@@ -8,7 +8,7 @@ import Exploration from './pages/exploration/Exploration';
 import Lesson from './pages/lesson/Lesson';
 import About from './pages/about/About';
 import Settings from './pages/settings/Settings';
-import Login from './pages/login/Login';
+import SignInOutContainer from './containers';
 
 function App() {
   const [navVisible, showNavbar] = useState(false);
@@ -16,11 +16,13 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-       
-       
-
+     
+        
         <Routes>
          
+        <Route path="/login" element={<SignInOutContainer/>} />
+      
+
           <Route
             path="/home"
             element={
@@ -67,8 +69,6 @@ function App() {
             }
           />
 
-       
-          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
     </BrowserRouter>
