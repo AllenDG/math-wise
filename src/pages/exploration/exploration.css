@@ -1,25 +1,91 @@
-.explore-content {
-  padding: 20px;
-}
+
 
 .description1 {
-  background-color: #0074b8; /* Add your desired background color */
-  color: #fff; /* Add your desired text color */
-  padding: 20px;
-  border-radius: 5px;
+  margin-left: 40vh;
+  margin-top: 10vh;
+  font-weight: 100;
+  letter-spacing: 4px;
 }
 
-.explore-container {
-  background-color: #f0f0f0; /* Add your desired background color */
-  padding: 20px;
-  border: 1px solid #ccc; /* Add a border or adjust as needed */
-  border-radius: 5px;
+.explore_container {
+  margin-top: 11vh;
+  padding-top: 40px;
+  height: 55vh;
+  width: 45vh;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: rgba(39, 31, 165, 0.9); /* Increase opacity to make it fully visible */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2; /* Higher z-index to place the explore container above the video */
 }
 
-.explore-container h6 {
-  margin-bottom: 10px;
+.explore_container h6 {
+  font-weight: 100;
+  margin-top: 30px;
+  font-size: 18px;
 }
 
-.explore-container li {
-  margin-bottom: 8px;
+.video-container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  position: relative;
+  margin-top: -10vh;
+  z-index: 1; /* Lower z-index to place the video below the container */
+}
+
+.video {
+  width: 90%;
+
+}
+
+.play-pause-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #25248b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-pause-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .description1 {
+    font-size: 20px;
+  }
+
+  .explore-container {
+    padding: 10px;
+  }
+
+  .explore-container h6 {
+    font-size: 18px;
+  }
+
+  .video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .play-pause-button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
 }

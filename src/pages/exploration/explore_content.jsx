@@ -1,42 +1,72 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './exploration.css';
+import { Grid, Box } from '@mui/material';
 import Video from '../../components/reusable/Video';
-import { Grid, Box, Typography } from '@mui/material';
 
-const Explore_Content = () => {
+
+const ExploreContent = () => {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlayPauseClick = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
-    <div className="explore-content">
+    <div>
       <Box sx={{ width: '100%' }}>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={6}>
-            <div className='description1'>
-              <Typography variant="h4">Make Learning & Teaching More Effective</Typography>
-              <Typography variant="body1">
-                Engage students with active participation.
-              </Typography>
-            </div>
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          <Grid item xs={6}>
+            <h1 className='description1'>Make Learning & teaching <br />
+            more effective with active <br />
+            participation of students.</h1>
           </Grid>
 
-          <Grid item xs={12} md={6}>
-            <div className='explore-container'>
-              <Typography variant="h6">Build an Incredible Learning Experience</Typography>
-              <Typography variant="body2">
-                <ol>
-                  <li>Fast and easy to understand</li>
-                  <li>Mix & match different learning activities</li>
-                  <li>Interactive website and application</li>
-                  <li>Test your skills by answering our quizzes</li>
-                  <li>Play interactive games in the app</li>
-                </ol>
-              </Typography>
+          <Grid item xs={6}>
+            <div className='explore_container'>
+              <p>Build an incredible <br />
+                learning experience</p>
+
+              <h6>
+                1. Fast and easy to understand <br /><br /><br />
+                2. Mix & match different learning activity <br /><br /><br />
+                3. Interactive website and application <br /><br /><br />
+                4. Test your skills by answering our quiz <br /><br /><br />
+                5. Play on our interactive games in the app
+              </h6>
             </div>
           </Grid>
         </Grid>
       </Box>
 
-      <Video />
+      <div className="video-container">
+        <video
+          ref={videoRef}
+          controls
+          preload="auto"
+          className="video"
+        >
+          <source src={<Video/>} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <button
+          className="play-pause-button"
+          onClick={handlePlayPauseClick}
+        >
+          {isPlaying ? 'Pause' : 'Play'}
+        </button>
+      </div>
+
+    
     </div>
   );
 }
 
-export default Explore_Content;
+export default ExploreContent;
